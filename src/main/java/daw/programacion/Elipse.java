@@ -3,13 +3,12 @@ package daw.programacion;
 /**
  * Class Elipse
  */
-public class Elipse {
+public class Elipse extends Conica {
 
   //
   // Fields
   //
 
-  private String color;
   private double ejeX;
   private double ejeY;
   private double foco;
@@ -19,8 +18,7 @@ public class Elipse {
   //
   public Elipse () { };
 
-  public Elipse(String color, double ejeX, double ejeY, double foco) {
-    this.color = color;
+  public Elipse(double ejeX, double ejeY, double foco) {
     this.ejeX = ejeX;
     this.ejeY = ejeY;
     this.foco = foco;
@@ -33,22 +31,6 @@ public class Elipse {
   //
   // Accessor methods
   //
-
-  /**
-   * Set the value of color
-   * @param newVar the new value of color
-   */
-  public void setColor (String newVar) {
-    color = newVar;
-  }
-
-  /**
-   * Get the value of color
-   * @return the value of color
-   */
-  public String getColor () {
-    return color;
-  }
 
   /**
    * Set the value of ejeX

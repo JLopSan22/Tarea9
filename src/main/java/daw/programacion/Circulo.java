@@ -3,13 +3,12 @@ package daw.programacion;
 /**
  * Class Circulo
  */
-public class Circulo {
+public class Circulo extends Conica {
 
   //
   // Fields
   //
 
-  private String color;
   private double diametro;
   
   //
@@ -17,10 +16,10 @@ public class Circulo {
   //
   public Circulo () { };
 
-  public Circulo(String color, double diametro) {
-    this.color = color;
+  public Circulo(double diametro) {
     this.diametro = diametro;
   }
+
   //
   // Methods
   //
@@ -29,22 +28,6 @@ public class Circulo {
   //
   // Accessor methods
   //
-
-  /**
-   * Set the value of color
-   * @param newVar the new value of color
-   */
-  public void setColor (String newVar) {
-    color = newVar;
-  }
-
-  /**
-   * Get the value of color
-   * @return the value of color
-   */
-  public String getColor () {
-    return color;
-  }
 
   /**
    * Set the value of diametro

@@ -3,13 +3,12 @@ package daw.programacion;
 /**
  * Class Cuadrado
  */
-public class Cuadrado {
+public class Cuadrado extends Cuadrilatero {
 
   //
   // Fields
   //
 
-  private String color;
   private double lado;
   
   //
@@ -17,8 +16,7 @@ public class Cuadrado {
   //
   public Cuadrado () { };
 
-  public Cuadrado(String color, double lado) {
-    this.color = color;
+  public Cuadrado(double lado) {
     this.lado = lado;
   }
   //
@@ -29,22 +27,6 @@ public class Cuadrado {
   //
   // Accessor methods
   //
-
-  /**
-   * Set the value of color
-   * @param newVar the new value of color
-   */
-  public void setColor (String newVar) {
-    color = newVar;
-  }
-
-  /**
-   * Get the value of color
-   * @return the value of color
-   */
-  public String getColor () {
-    return color;
-  }
 
   /**
    * Set the value of lado
