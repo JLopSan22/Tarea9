@@ -1,4 +1,4 @@
-package daw.programacion;
+package tarea9_1;
 
 /**
  * Class Cuadrado
