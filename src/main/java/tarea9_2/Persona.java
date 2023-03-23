@@ -1,6 +1,7 @@
 package tarea9_2;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 /**
  * Class Persona
@@ -17,14 +18,14 @@ public class Persona {
   private LocalDate fechaNacimiento;
   private char sexo;
   private int id;
-  private PuestoTrabajo puesto;
+  private ArrayList<PuestoTrabajo> puesto;
   
   //
   // Constructors
   //
   public Persona () { };
 
-  public Persona(String nombre, String apellido1, String apellido2, LocalDate fechaNacimiento, char sexo, int id, PuestoTrabajo puesto) {
+  public Persona(String nombre, String apellido1, String apellido2, LocalDate fechaNacimiento, char sexo, int id, ArrayList<PuestoTrabajo> puesto) {
     this.nombre = nombre;
     this.apellido1 = apellido1;
     this.apellido2 = apellido2;
@@ -142,18 +143,17 @@ public class Persona {
    * Set the value of puesto
    * @param newVar the new value of puesto
    */
-  public void setPuesto (PuestoTrabajo newVar) {
-    puesto = newVar;
+  public void setPuesto(ArrayList<PuestoTrabajo> puesto) {
+    this.puesto = puesto;
   }
 
   /**
    * Get the value of puesto
    * @return the value of puesto
    */
-  public PuestoTrabajo getPuesto () {
+  public ArrayList<PuestoTrabajo> getPuesto() {
     return puesto;
   }
-
   //
   // Other methods
   //
